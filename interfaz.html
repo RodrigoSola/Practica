@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="Description" content="Corrafer" name="author" content="Rodrigo Sola">
+    <link rel="stylesheet" href="style.css">
+    <style> body {
+        background-image: url(/volquete.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+    </style>
+    
+    <title>Corrafer</title>
+    <script>
+        function login() {
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          
+          // Verifica si el usuario y la contraseña son correctos
+          if (username === "corrafer" && password === "1234") {
+            // Redirecciona a la página deseada
+            window.location.href = "index.html";
+          } else {
+            alert("Usuario o contraseña incorrectos");
+          }
+        }
+      </script>
+    <script>
+        <title>Corrafer</title>
+ 
+        function saveData() {
+            // Logic to save information to the database goes here
+        }
+    </script>
+    
+</head>
+<body>
+    
+    
+  
+    <form>
+      
+      <br>
+        <header ></header><br><br><br><br><br><br><br><br><br><br><br><br>
+        <header  for="username">Usuario:<input type="text" id="username" name="username"></header>
+        <br><br>
+        
+        <header for="password">Contraseña:<input type="password" id="password" name="password"></header>
+        
+        <br><br>
+        
+       <div style="text-align: left;"> <button type="button" onclick="login()">Iniciar sesión</button>
+      
+       </div>
+      </form>
+    
+    
+    
+    <!-- Your other interface elements go here -->
+</body>
+
+</html>
