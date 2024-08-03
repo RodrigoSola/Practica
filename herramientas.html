@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Corrafer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Herramientas</h1>
+        <div class="store-wrapper">
+            <div class="category_list">
+                <a href="#" class="category_item" category="all">Todo</a>
+                <a href="#" class="category_item" category="clavos">Clavos</a>
+                <a href="#" class="category_item" category="tornillos">Tornillos</a>
+                <a href="#" class="category_item" category="martillos">Martillos</a>
+                <a href="#" class="category_item" category="pinzas">Pinzas</a>
+                <a href="#" class="category_item" category="pegamentos">Pegamentos</a>
+            </div>
+
+            <section class="contenedor">
+                <div class="contenedor-items">
+                    <div class="products">
+                        <div class="product-item" category="clavos">
+                            <img src="images/clavo1.jpeg" alt="" class="img-item">
+                            <span class="titulo-item">Clavo Chapas</span>
+                            <p class="precio-item">$50</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                        <div class="product-item" category="clavos">
+                            <img src="images/clavo2.jpeg" alt="" class="img-item">
+                            <span class="titulo-item">Clavo Cabeza Plana</span>
+                            <p class="precio-item">$7</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                        <div class="product-item" category="tornillos">
+                            <img src="images/tornillo1.jpeg" alt="" class="img-item">
+                            <span class="titulo-item">Tornillo Madera</span>
+                            <p class="precio-item">$10</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                        <div class="product-item" category="tornillos">
+                            <img src="images/tornillo2.jpg" alt="" class="img-item">
+                            <span class="titulo-item">Tornillo Comun</span>
+                            <p class="precio-item">$10</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                        <div class="product-item" category="martillos">
+                            <img src="images/martillo1.jpg" alt="" class="img-item">
+                            <span class="titulo-item">Martillo con saca clavo</span>
+                            <p class="precio-item">$7500</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                        <div class="product-item" category="martillos">
+                            <img src="images/martillo2.jpeg" alt="" class="img-item">
+                            <span class="titulo-item">Martillo Goma</span>
+                            <p class="precio-item">$8500</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                        <div class="product-item" category="pinzas">
+                            <img src="images/pinza1.jpg" alt="" class="img-item">
+                            <span class="titulo-item">Pinza</span>
+                            <p class="precio-item">$9800</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                        <div class="product-item" category="pinzas">
+                            <img src="images/pinza2.jpg" alt="" class="img-item">
+                            <span class="titulo-item">Pinza Pico Loro</span>
+                            <p class="precio-item">$12000</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                        <div class="product-item" category="pegamentos">
+                            <img src="images/pegamento1.jpeg" alt="" class="img-item">
+                            <span class="titulo-item">Pegamento UHU</span>
+                            <p class="precio-item">$8600</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                        <div class="product-item" category="pegamentos">
+                            <img src="images/pegamento2.webp" alt="" class="img-item">
+                            <span class="titulo-item">Pegamento La Gotita</span>
+                            <p class="precio-item">$6500</p>
+                            <button class="boton-item">Agregar a la lista</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrito">
+                    <div class="header-carrito">
+                        <h2>Listado Herramientas</h2>
+                    </div>
+                    <div class="carrito-items-container">
+                        <!-- Items del carrito -->
+                    </div>
+                    <div class="carrito-total">
+                        <div class="fila">
+                            <strong>Total</strong>
+                            <span class="carrito-precio-total">
+                                <p id="precio"></p>
+                            </span>
+                        </div>
+                        <button class="btn-pagar">Mandar a imprimir <i class="fa-solid fa-hammer"></i></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

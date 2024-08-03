@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body{
+    background: rgb(232,231,240);
+background: linear-gradient(180deg, rgba(232,231,240,1) 11%, rgba(74,74,157,0.25253851540616246) 52%, rgba(0,1,255,1) 82%);
+}
+h1{
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 200px;
+    text-align: -webkit-center;
+}
+label{
+    font-size: 50px;
+}
+input{
+    width: 350px;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: column;
+    margin-top: 225px;
+    margin-left: 120px;
+}
+button{
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 102px;
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #999;
+}

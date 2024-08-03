@@ -120,7 +120,7 @@ function actualizarTotalCarrito() {
 
 
 function ocultarCarrito(){
-    let carritoItems = document.getElementsByClassName('carrito-items')[0];
+    let carritoItems = document.getElementsByClassName('carrito-items-container')[0];
     if(carritoItems.childElementCount == 0){
         let carrito = document.getElementsByClassName('carrito')[0];
         carrito.style.marginRight = '-100%';
@@ -128,7 +128,7 @@ function ocultarCarrito(){
         carritoVisible = false;
 
 
-        let items = document.getElementsByClassName('contenedor-items')[0];
+        let items = document.getElementsByClassName('carrito-items-container')[0];
         items.style.width = '100%';
 
 
@@ -185,7 +185,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc) {
     //comprueba si el item ya se encuentra en el carrito
     let nombresItemsCarrito = itemsCarrito.getElementsByClassName('carrito-item-titulo');
     for(let i=0; i < nombresItemsCarrito.length; i++ ) {
-        if(nombresItemsCarrito[i].innerText.toLowerCase === titulo.toLowerCase){
+        if(nombresItemsCarrito[i].innerText.toLowerCase() === titulo.toLowerCase()){
             alert("el item ya se encuentra en el carrito");
             return;
         }
@@ -226,7 +226,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc) {
 function pagarClicked(event){
     alert("Impresion realizada con éxito!");
 
-    let carritoItems = document.getElementsByClassName('carrito-items')[0];
+    let carritoItems = document.getElementsByClassName('carrito-items-container')[0];
     while(carritoItems.hasChildNodes()){
         carritoItems.removeChild(carritoItems.firstChild);
     }
