@@ -23,7 +23,7 @@ body {
 }
 
 .wrap h1 {
-  color: #fff;
+  color: #050303f8;
   text-align: center;
   font-weight: 400;
   display: flex;
@@ -79,7 +79,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
-  background-color: black;
+  background-color: #2d3e50;
   color: white;
 }
 
