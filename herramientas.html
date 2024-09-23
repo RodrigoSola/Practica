@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
     <title>Corrafer</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/script.js"></script>
+    
 </head>
 
 <body>
@@ -31,8 +33,8 @@
 
             <section class="contenedor">
                 <div class="contenedor-items">
-                    <div class="products">
-                        <div class="product-item" category="clavos">
+                    <div class="products" id="products">
+                        <!-- <div class="product-item" category="clavos">
                             <img src="images/clavo1.jpeg" alt="" class="img-item">
                             <span class="titulo-item">Clavo Chapas</span>
                             <p class="precio-item">$50</p>
@@ -127,7 +129,7 @@
                             <span class="titulo-item">Cable Encauchetado</span>
                             <p class="precio-item">$4550</p>
                             <button class="boton-item">Agregar a la lista</button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="carrito">
@@ -144,12 +146,24 @@
                                 <p id="precio"></p>
                             </span>
                         </div>
-                        <button class="btn-pagar">Mandar a imprimir <i class="fa-solid fa-hammer"></i></button>
+                        
+                        <!-- <button id="checkout-btn" class="btn-pagar">Ir a Pagos <i class="fa-solid fa-hammer"></i></button> -->
+                        <button class="btn-primary" id ="checkout-btn"> go to checkout</button>
+                        <div id ="wallet_container"></div>
+                        
                     </div>
+                    
                 </div>
             </section>
         </div>
     </div>
+
+    
+    <script src="./js/script.js"></script>
+    <script type="module" src="./server/server.js"></script>
+    <script src="./js/cart.js"></script>
+     
+    
 </body>
 
 </html>
