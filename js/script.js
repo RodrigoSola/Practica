@@ -1,175 +1,175 @@
-const productos =[
-    {
-        id:1,
-        class:'product-item',
-        category: "clavos",
-        productName: "Clavo Chapas",
-        price: 7,
-        quanty: 1,
-        img:"./images/clavo1.jpeg",
-    },
-    {
-        id:2,
-        class:'product-item',
-        category: "clavos",
-        productName: 'Clavo Cabeza Plana',
-        price: 10,
-        quanty: 1,
-        img:"./images/clavo2.jpeg",
-    },
-    {
-        id:3,
-        class:'product-item',
-        category: "tornillos",
-        productName: "Tornillo Madera",
-        price: 50,
-        quanty: 1,
-        img:"./images/tornillo1.jpeg",
-    },
-    {
-        id:4,
-        class:'product-item',
-        category: "tornillos",
-        productName: "Tornillo Comun",
-        price: 50,
-        quanty: 1,
-        img:"./images/tornillo2.jpg",
-    },
-    {
-        id:5,
-        class:'product-item',
-        category: "martillos",
-        productName: "Martillo con saca clavo",
-        price: 50,
-        quanty: 1,
-        img:"./images/martillo1.jpg",
-    },
-    {
-        id:6,
-        class:'product-item',
-        category: "martillos",
-        productName: "Martillo Goma",
-        price: 50,
-        quanty: 1,
-        img:"./images/martillo2.jpeg",
-    },
-    {
-        id:7,
-        class:'product-item',
-        category: "pinzas",
-        productName: "Pinza Pico Loro",
-        price: 50,
-        quanty: 1,
-        img:"./images/pinza2.jpg",
-    },
-    {
-        id:8,
-        class:'product-item',
-        category: "pegamentos",
-        productName: "Pegamento UHU",
-        price: 50,
-        quanty: 1,
-        img:"./images/pegamento1.jpeg",
-    },
-    {
-        id:9,
-        class:'product-item',
-        category: "pegamentos",
-        productName: "Pegamento La Gotita",
-        price: 50,
-        quanty: 1,
-        img:"./images/pegamento2.jpeg",
-    },
-    {
-        id:10,
-        class:'product-item',
-        category: "abrazaderas",
-        productName: "Abrazaderas galv.",
-        price: 50,
-        quanty: 1,
-        img:"./images/abrazaderas1.jpg",
-    },
-    {
-        id:11,
-        class:'product-item',
-        category: "abrazaderas",
-        productName: "Abrazaderas ref.",
-        price: 50,
-        quanty: 1,
-        img:"./images/abrazaderas2.png",
-    },
-    {
-        id:12,
-        class:'product-item',
-        category: "aujereadora",
-        productName: "Agujereadora Bosch",
-        price: 50,
-        quanty: 1,
-        img:"./images/agujereadora1.jpg",
-    },
-    {
-        id:13,
-        class:'product-item',
-        category: "aujereadora",
-        productName: "Agujereadora Stanley",
-        price: 50,
-        quanty: 1,
-        img:"./images/agujereadora2.png",
-    },
-    {
-        id:14,
-        class:'product-item',
-        category: "cables",
-        productName: "Cable Taller",
-        price: 50,
-        quanty: 1,
-        img:"./images/cableTaller.webp",
-    },
-    {
-        id:15,
-        class:'product-item',
-        category: "cables",
-        productName: "Cable Encauchetado",
-        price: 50,
-        quanty: 1,
-        img:"./images/cableEncau.jpg",
-    },
-]
-const shopContent = document.getElementById('products');
-const cart=[];
+// const productos =[
+//     {
+//         id:1,
+//         class:'product-item',
+//         category: "clavos",
+//         productName: "Clavo Chapas",
+//         price: 7,
+//         quanty: 1,
+//         img:"./images/clavo1.jpeg",
+//     },
+//     {
+//         id:2,
+//         class:'product-item',
+//         category: "clavos",
+//         productName: 'Clavo Cabeza Plana',
+//         price: 10,
+//         quanty: 1,
+//         img:"./images/clavo2.jpeg",
+//     },
+//     {
+//         id:3,
+//         class:'product-item',
+//         category: "tornillos",
+//         productName: "Tornillo Madera",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/tornillo1.jpeg",
+//     },
+//     {
+//         id:4,
+//         class:'product-item',
+//         category: "tornillos",
+//         productName: "Tornillo Comun",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/tornillo2.jpg",
+//     },
+//     {
+//         id:5,
+//         class:'product-item',
+//         category: "martillos",
+//         productName: "Martillo con saca clavo",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/martillo1.jpg",
+//     },
+//     {
+//         id:6,
+//         class:'product-item',
+//         category: "martillos",
+//         productName: "Martillo Goma",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/martillo2.jpeg",
+//     },
+//     {
+//         id:7,
+//         class:'product-item',
+//         category: "pinzas",
+//         productName: "Pinza Pico Loro",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/pinza2.jpg",
+//     },
+//     {
+//         id:8,
+//         class:'product-item',
+//         category: "pegamentos",
+//         productName: "Pegamento UHU",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/pegamento1.jpeg",
+//     },
+//     {
+//         id:9,
+//         class:'product-item',
+//         category: "pegamentos",
+//         productName: "Pegamento La Gotita",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/pegamento2.jpeg",
+//     },
+//     {
+//         id:10,
+//         class:'product-item',
+//         category: "abrazaderas",
+//         productName: "Abrazaderas galv.",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/abrazaderas1.jpg",
+//     },
+//     {
+//         id:11,
+//         class:'product-item',
+//         category: "abrazaderas",
+//         productName: "Abrazaderas ref.",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/abrazaderas2.png",
+//     },
+//     {
+//         id:12,
+//         class:'product-item',
+//         category: "aujereadora",
+//         productName: "Agujereadora Bosch",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/agujereadora1.jpg",
+//     },
+//     {
+//         id:13,
+//         class:'product-item',
+//         category: "aujereadora",
+//         productName: "Agujereadora Stanley",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/agujereadora2.png",
+//     },
+//     {
+//         id:14,
+//         class:'product-item',
+//         category: "cables",
+//         productName: "Cable Taller",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/cableTaller.webp",
+//     },
+//     {
+//         id:15,
+//         class:'product-item',
+//         category: "cables",
+//         productName: "Cable Encauchetado",
+//         price: 50,
+//         quanty: 1,
+//         img:"./images/cableEncau.jpg",
+//     },
+// ]
+// const shopContent = document.getElementById('products');
+// const cart=[];
 
 
 
-productos.forEach((product)=>{
-    const content = document.createElement('div');
-    content.className = "product-item";
-    content.innerHTML = `
-    <img src="${product.img}" class="img-item">
-    <span class="titulo-item">"${product.productName}" </span>
-    <p class="precio-item">${product.price}</p>
+// productos.forEach((product)=>{
+//     const content = document.createElement('div');
+//     content.className = "product-item";
+//     content.innerHTML = `
+//     <img src="${product.img}" class="img-item">
+//     <span class="titulo-item">"${product.productName}" </span>
+//     <p class="precio-item">${product.price}</p>
     
-    `;
+//     `;
 
-    shopContent.appendChild(content);
-    const buyButton = document.createElement('button');
+//     shopContent.appendChild(content);
+//     const buyButton = document.createElement('button');
 
-    buyButton.innerText = "Agregar al carrito";
-    buyButton.className = "boton-item";
+//     buyButton.innerText = "Agregar al carrito";
+//     buyButton.className = "boton-item";
 
-    content.appendChild(buyButton);
+//     content.appendChild(buyButton);
 
-    buyButton.addEventListener('click', ()=>{
-        cart.push({
-            id: product.id,
-            productName: product.productName,
-            price: product.price,
-            quantity: product.quanty,
-            img: product.img,
-        });
-        console.log(cart);
-    });
+//     buyButton.addEventListener('click', ()=>{
+//         cart.push({
+//             id: product.id,
+//             productName: product.productName,
+//             price: product.price,
+//             quantity: product.quanty,
+//             img: product.img,
+//         });
+//         console.log(cart);
+//     });
  
-});
+// });
 
 
 //funcion para mostrar productos segun la categoria

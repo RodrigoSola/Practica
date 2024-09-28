@@ -258,3 +258,7 @@ img {
   flex-direction: row;
   gap: 0.6rem;
 }
+#wallet_container{
+  padding: 15px;
+width: 100%;
+}
